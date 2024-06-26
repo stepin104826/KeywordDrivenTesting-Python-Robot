@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.12 on win32)" generated="2024-04-04T22:16:02.623826" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DataDrivenTesting3" source="E:\Automation\Robot Framework\Project1\Testcases\DataDrivenTesting3.robot">
+<kw name="Open Application" owner="loginresources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:03.033763" level="INFO">Opening browser 'Chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<arg>${LoginURL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-04T22:16:03.033763" elapsed="3.390460"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-04T22:16:06.424223" elapsed="0.133767"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:03.033763" elapsed="3.524227"/>
+</kw>
+<test id="s1-s1-t1" name="Data-driven TC with CSV data using admin@yourstore.com" line="12">
+<kw name="Invalid Login">
+<kw name="Set Execution Speed" owner="loginresources">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-04-04T22:16:06.557990" elapsed="0.004507"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:06.557990" elapsed="0.004507"/>
+</kw>
+<kw name="Input Username" owner="loginresources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:06.563512" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:06.563512" elapsed="1.659516"/>
+</kw>
+<arg>${u}</arg>
+<status status="PASS" start="2024-04-04T22:16:06.562497" elapsed="1.660531"/>
+</kw>
+<kw name="Input Password" owner="loginresources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:08.223540" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:08.223540" elapsed="1.649356"/>
+</kw>
+<arg>${p}</arg>
+<status status="PASS" start="2024-04-04T22:16:08.223540" elapsed="1.649356"/>
+</kw>
+<kw name="Click Login Button" owner="loginresources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:09.873402" level="INFO">Clicking element 'xpath://*[@class="button-1 login-button"]'.</msg>
+<arg>xpath://*[@class="button-1 login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:09.873402" elapsed="1.339949"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:09.873402" elapsed="1.340622"/>
+</kw>
+<kw name="Error message should be visible" owner="loginresources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:12.276694" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<arg>Login was unsuccessful.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-04T22:16:11.215574" elapsed="1.061120"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:11.214632" elapsed="1.062062"/>
+</kw>
+<arg>u=admin@yourstore.com</arg>
+<arg>p=adm</arg>
+<status status="PASS" start="2024-04-04T22:16:06.557990" elapsed="5.718704"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:06.557990" elapsed="5.718704"/>
+</test>
+<test id="s1-s1-t2" name="Data-driven TC with CSV data using admin@yourstore.com" line="12">
+<kw name="Invalid Login">
+<kw name="Set Execution Speed" owner="loginresources">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-04-04T22:16:12.276694" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:12.276694" elapsed="0.000000"/>
+</kw>
+<kw name="Input Username" owner="loginresources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:12.276694" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:12.276694" elapsed="1.626129"/>
+</kw>
+<arg>${u}</arg>
+<status status="PASS" start="2024-04-04T22:16:12.276694" elapsed="1.626129"/>
+</kw>
+<kw name="Input Password" owner="loginresources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:13.903370" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:13.903370" elapsed="1.591942"/>
+</kw>
+<arg>${p}</arg>
+<status status="PASS" start="2024-04-04T22:16:13.903370" elapsed="1.591942"/>
+</kw>
+<kw name="Click Login Button" owner="loginresources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:15.495312" level="INFO">Clicking element 'xpath://*[@class="button-1 login-button"]'.</msg>
+<arg>xpath://*[@class="button-1 login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:15.495312" elapsed="1.219596"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:15.495312" elapsed="1.219596"/>
+</kw>
+<kw name="Error message should be visible" owner="loginresources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:17.742941" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<arg>Login was unsuccessful.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-04T22:16:16.714908" elapsed="1.028033"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:16.714908" elapsed="1.028538"/>
+</kw>
+<arg>u=admin@yourstore.com</arg>
+<arg>p=${EMPTY}</arg>
+<status status="PASS" start="2024-04-04T22:16:12.276694" elapsed="5.466752"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:12.276694" elapsed="5.466752"/>
+</test>
+<test id="s1-s1-t3" name="Data-driven TC with CSV data using afaf@yourstore.com" line="12">
+<kw name="Invalid Login">
+<kw name="Set Execution Speed" owner="loginresources">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-04-04T22:16:17.773666" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:17.773666" elapsed="0.000000"/>
+</kw>
+<kw name="Input Username" owner="loginresources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:17.773666" level="INFO">Typing text 'afaf@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:17.773666" elapsed="1.649729"/>
+</kw>
+<arg>${u}</arg>
+<status status="PASS" start="2024-04-04T22:16:17.773666" elapsed="1.649729"/>
+</kw>
+<kw name="Input Password" owner="loginresources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:19.423395" level="INFO">Typing text 'afavddv' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:19.423395" elapsed="1.639846"/>
+</kw>
+<arg>${p}</arg>
+<status status="PASS" start="2024-04-04T22:16:19.423395" elapsed="1.640372"/>
+</kw>
+<kw name="Click Login Button" owner="loginresources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:21.063767" level="INFO">Clicking element 'xpath://*[@class="button-1 login-button"]'.</msg>
+<arg>xpath://*[@class="button-1 login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:16:21.063767" elapsed="1.359506"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:21.063767" elapsed="1.361075"/>
+</kw>
+<kw name="Error message should be visible" owner="loginresources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:16:23.483148" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<arg>Login was unsuccessful.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-04T22:16:22.424842" elapsed="1.058306"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:22.424842" elapsed="1.058662"/>
+</kw>
+<arg>u=afaf@yourstore.com</arg>
+<arg>p=afavddv</arg>
+<status status="PASS" start="2024-04-04T22:16:17.773666" elapsed="5.710075"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:17.772541" elapsed="5.711282"/>
+</test>
+<kw name="Close Application" owner="loginresources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-04-04T22:16:23.484635" elapsed="2.628470"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:23.483823" elapsed="2.629282"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:16:02.653525" elapsed="23.459580"/>
+</suite>
+<status status="PASS" start="2024-04-04T22:16:02.633573" elapsed="23.480037"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="DataDrivenTesting3">Suites.DataDrivenTesting3</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-04T22:16:12.276694" level="WARN">Multiple tests with name 'Data-driven TC with CSV data using admin@yourstore.com' executed in suite 'Suites.DataDrivenTesting3'.</msg>
+</errors>
+</robot>

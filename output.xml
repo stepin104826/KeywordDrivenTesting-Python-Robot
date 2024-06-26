@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.12 on win32)" generated="2024-04-04T22:35:48.203817" rpa="false" schemaversion="5">
+<suite id="s1" name="RadioButtons" source="E:\Automation\Robot Framework\Project1\Testcases\RadioButtons.robot">
+<test id="s1-t1" name="Test Radio Buttons and Check Boxes" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:35:48.403633" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-04T22:35:48.403633" elapsed="3.949793"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-04T22:35:52.353426" elapsed="0.125303"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-04-04T22:35:52.479728" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:35:52.480876" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a'.</msg>
+<arg>xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:35:52.480575" elapsed="4.252278"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-04-04T22:35:56.733858" level="INFO">${radio_button_element} = id:gender-male</msg>
+<var>${radio_button_element}</var>
+<arg>id:gender-male</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-04-04T22:35:56.732853" elapsed="0.001005"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${radio_button_element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-04T22:35:56.734208" elapsed="4.288911"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:36:01.024135" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-04-04T22:36:01.023622" elapsed="6.059403"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-04-04T22:36:07.083971" level="INFO">${checkbox_element} = id:Newsletter</msg>
+<var>${checkbox_element}</var>
+<arg>id:Newsletter</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-04-04T22:36:07.083971" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${checkbox_element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-04T22:36:07.083971" elapsed="4.288725"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:36:11.373739" level="INFO">Selecting checkbox 'Newsletter'.</msg>
+<arg>Newsletter</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:36:11.373739" elapsed="6.029223"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-04T22:36:17.404117" level="INFO">Unselecting checkbox 'Newsletter'.</msg>
+<arg>Newsletter</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T22:36:17.404034" elapsed="8.058894"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-04T22:36:25.463433" elapsed="4.059798"/>
+</kw>
+<status status="PASS" start="2024-04-04T22:35:48.403633" elapsed="41.120565"/>
+</test>
+<status status="PASS" start="2024-04-04T22:35:48.203817" elapsed="41.320381"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RadioButtons">RadioButtons</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,20 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DataDrivenTesting2                                                     
+==============================================================================
+Data driven TC with Excel data using admin@yourstore.co and ]=        | PASS |
+------------------------------------------------------------------------------
+Data driven TC with Excel data using admin@yourstore.com and          | PASS |
+------------------------------------------------------------------------------
+Data driven TC with Excel data using afaf and dfdsv                   | PASS |
+------------------------------------------------------------------------------
+Data driven TC with Excel data using  and                             | PASS |
+------------------------------------------------------------------------------
+Suites.DataDrivenTesting2                                             | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  E:\Automation\Robot Framework\pabot_results\1\output.xml

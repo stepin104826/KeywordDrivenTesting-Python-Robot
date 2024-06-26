@@ -1,0 +1,7 @@
+datasources:ed80fa1d859e5123bbfc3a73ed23d2159dc63f92
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:764fbc4d88af3b0428c926919dd49a50b2a01a04
+--suite Suites.DataDrivenTesting1
+--suite Suites.DataDrivenTesting2
+--suite Suites.DataDrivenTesting3
